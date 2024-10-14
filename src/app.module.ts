@@ -13,6 +13,7 @@ import configuration from './config/configuration';
     ConfigModule.forRoot({
       envFilePath: ['.env.development.local', '.env.production.local'],
       load: [configuration],
+      isGlobal: true,
     }),
     PostgresModule,
     AuthModule,
